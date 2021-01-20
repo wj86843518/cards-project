@@ -1,18 +1,29 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <van-button type="primary">主要按钮</van-button>
+
+    <van-uploader :after-read="afterRead" />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import { getData } from "../http/home";
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
+  name: "Home",
+  components: {},
+  mounted() {
+    this.getData();
+  },
+  methods: {
+    afterRead(file) {
+      // 此时可以自行将文件上传至服务器
+      console.log(file);
+    },
+    getData() {
+      getData({ a: "1" }).then((res) => {
+        console.log("res=>", res);
+      });
+    },
+  },
+};
 </script>
