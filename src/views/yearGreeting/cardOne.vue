@@ -7,8 +7,6 @@
   :src="require('../../assets/yearGreeting/cardOne/BG.gif')"
 /></div>
   <div class="bg-word">    <van-image
-  width="100vw"
-  height="100vh"
   fit="fill"
   :src="require('../../assets/yearGreeting/cardOne/bgWord.gif')"
 /></div>
@@ -40,7 +38,7 @@ position: relative;
     position: absolute;
     left: 0;
     top: 0;
-  width: 100vw;
+  width: 80vw;
   height: 100vh;
 }
 
