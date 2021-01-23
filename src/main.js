@@ -6,6 +6,8 @@ import store from './store'
 import Vant from 'vant';  // https://vant-contrib.gitee.io/vant/#/zh-CN/uploader  官网链接
 import 'vant/lib/index.css';
 
+import 'lib-flexible/flexible.js'
+
 Vue.use(Vant);
 
 

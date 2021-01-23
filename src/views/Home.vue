@@ -27,3 +27,16 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.home {
+  height: 100%;
+  width: 100%;
+  background: url(../assets/BG.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+}
+</style>
