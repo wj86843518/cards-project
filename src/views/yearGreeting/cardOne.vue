@@ -78,6 +78,9 @@
       <div class="content-time">
         2021年2月11日
       </div>
+      <div class="content-button">
+
+      </div>
     </div>
     <div class="middle-title-logo">
       <van-image
@@ -260,5 +263,17 @@ export default {
   text-align: center;
   font-size: 1.02rem;
   color: #EAD4B4;
+}
+.content-button{
+  position: absolute;
+  left: 50%;
+  top:33.21rem;
+  transform: translate(-50%);
+  height: 2.86rem;
+  width: 10.98rem;
+  background-image: url("../../assets/yearGreeting/cardOne/buttonImg.png");
+  background-repeat: round;
+  line-height: 2.86rem;
+
 }
 </style>
