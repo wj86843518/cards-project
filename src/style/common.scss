@@ -1,0 +1,15 @@
+
+@mixin setBg($url){
+    background-color: #fff;
+    background: url($url);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+}
+
+@mixin w-h-100(){
+    width:   100vw;
+    height: 100vh;
+}

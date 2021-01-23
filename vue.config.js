@@ -21,7 +21,7 @@ module.exports = {
 
         open: true,
 
-        host: 'localhost',
+        host: '192.168.0.102',
 
         port: 8888,
 
@@ -56,8 +56,12 @@ module.exports = {
 
     //  调整内部的 webpack 配置
 
-    configureWebpack: () => { }, //(Object | Function)
+    configureWebpack: () => {
+    }, //(Object | Function)
 
-    chainWebpack: () => { },
+    chainWebpack: (config) => {
+        config.resolve.alias
+            .set('@', resolve(__dirname, 'src'))
+    },
 
 }

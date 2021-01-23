@@ -8,7 +8,7 @@
 html,
 body,
 #app {
-  width: 100%;
-  height: 100%;
+  width: 100vw !important;
+  height: 100vh !important;
 }
 </style>
