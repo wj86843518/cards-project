@@ -100,6 +100,9 @@ export default {
       contentWord: "你好好你好",
     };
   },
+  mounted(){
+     this.shareList()
+  }
 };
 </script>
 

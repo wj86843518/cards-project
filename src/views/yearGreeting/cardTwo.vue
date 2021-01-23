@@ -1,6 +1,5 @@
 <template>
   <div class="box">
-    aHDSVHKDAJVS
     <div class="bg-box">
       <van-image
         width="100vw"
@@ -9,12 +8,17 @@
         :src="require('../../assets/yearGreeting/cardTwo/BG.png')"
       />
     </div>
+    <div class="content-box">
+
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-
+  mounted(){
+   
+  }
 }
 </script>
 
