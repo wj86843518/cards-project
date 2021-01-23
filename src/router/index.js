@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import YearGreeting10 from '../views/yearGreeting/card10.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -24,6 +25,11 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/yearGreeting/cardOne.vue')
+  },
+  {
+    path: '/yearGreeting10',
+    name: 'yearGreeting10',
+    component: YearGreeting10
   },
 ]
 
