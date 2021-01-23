@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import YearGreeting10 from '../views/yearGreeting/card10.vue'
+import YearGreeting from '../views/yearGreeting/YearGreeting.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -19,17 +19,9 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/yearGreeting',
+    path: '/yearGreeting/:id',
     name: 'yearGreeting',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/yearGreeting/cardOne.vue')
-  },
-  {
-    path: '/yearGreeting10',
-    name: 'yearGreeting10',
-    component: YearGreeting10
+    component: YearGreeting
   },
 ]
 
