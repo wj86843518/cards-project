@@ -6,6 +6,7 @@
 
 <script>
 import Card1 from "./cardOne.vue";
+import Card9 from "./card9.vue";
 import Card10 from "./card10.vue";
 export default {
   data() {
@@ -15,6 +16,7 @@ export default {
   },
   components: {
     Card1,
+    Card9,
     Card10,
   },
   watch: {
