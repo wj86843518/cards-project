@@ -38,7 +38,7 @@
             <img
               v-if="flag === '1'"
               class="btn__txt"
-              src="./pics/pic2/hl.png"
+              src="./pics/pic2/zs.png"
             />
             <img v-else class="btn__txt" src="./pics/pic2/hl.png" />
           </div>

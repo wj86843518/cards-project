@@ -13,3 +13,20 @@
     width:   100vw;
     height: 100vh;
 }
+
+@mixin center-x-y(){
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+@mixin center-x(){
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@mixin center-y(){
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
