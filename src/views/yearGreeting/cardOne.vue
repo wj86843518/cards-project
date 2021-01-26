@@ -1,113 +1,143 @@
 <template>
-  <div class="box">
-    <div class="bg-box">
-      <van-image
-        width="100vw"
-        height="100vh"
-        fit="fill"
-        :src="require('../../assets/yearGreeting/cardOne/BG.gif')"
-      />
-    </div>
-    <!-- <div class="bg-word">
-      <van-image
-        fit="fill"
-        :src="require('../../assets/yearGreeting/cardOne/bgWord.gif')"
-      />
-    </div>
-    <div class="year-img">
-      <van-image
-        fit="fill"
-        :src="require('../../assets/yearGreeting/cardOne/2021.gif')"
-      />
-    </div>
-    <div class="new-year-logo">
-      <van-image
-        fit="fill"
-        :src="require('../../assets/yearGreeting/cardOne/happy.gif')"
-      />
-    </div>
-    <div class="animal-logo">
-      <van-image
-        fit="fill"
-        :src="require('../../assets/yearGreeting/cardOne/animal.gif')"
-      />
-    </div>
-    <div class="introduce-word">新/春/大/拜/年/初/二/我/又/来</div> -->
-
-    <!-- 这里开始是第二页 -->
-    <div class="content-box">
-      <div class="content-title-logo">
-        <van-image
-          fit="fill"
-          :src="require('../../assets/yearGreeting/cardOne/happy.gif')"
-        />
-      </div>
-      <div class="content-title">· 新 年 祝 福 ·</div>
-      <div class="content-title-second">
-        <van-image
-          fit="fill"
-          :src="require('../../assets/yearGreeting/cardOne/greeting.png')"
-        />
-      </div>
-      <div class="content-title-line">
-        <van-image
-          fit="fill"
-          :src="require('../../assets/yearGreeting/cardOne/line.png')"
-        />
-      </div>
-      <div class="content-word">
-        <van-field
-          v-model="contentWord"
-          :border="false"
-          center
-          input-align="center"
-        />
-      </div>
-      <div class="content-animal-logo">
-        <van-image
-          fit="fill"
-          :src="require('../../assets/yearGreeting/cardOne/animalLogo.png')"
-        />
-      </div>
-      <div class="content-animal-word">
-        <van-image
-          fit="fill"
-          :src="require('../../assets/yearGreeting/cardOne/animalWord.png')"
-        />
-      </div>
-      <div class="content-time">
-        2021年2月11日
-      </div>
-      <div class="content-button">
-
-      </div>
-    </div>
-    <div class="middle-title-logo">
-      <van-image
-        fit="fill"
-        width="100%"
-        height="1.27rem"
-        :src="require('../../assets/yearGreeting/cardOne/middleLogo.png')"
-      />
-    </div>
+  <div class="container">
+    <swiper class="swiper" :options="swiperOption">
+      <swiper-slide>
+        <div class="box1">
+          <div class="bg-box">
+            <van-image
+              width="100vw"
+              height="100vh"
+              fit="fill"
+              :src="require('../../assets/yearGreeting/cardOne/BG.gif')"
+            />
+          </div>
+          <div class="bg-word">
+            <van-image
+              fit="fill"
+              :src="require('../../assets/yearGreeting/cardOne/bgWord.gif')"
+            />
+          </div>
+          <div class="year-img">
+            <van-image
+              fit="fill"
+              :src="require('../../assets/yearGreeting/cardOne/2021.gif')"
+            />
+          </div>
+          <div class="new-year-logo">
+            <van-image
+              fit="fill"
+              :src="require('../../assets/yearGreeting/cardOne/happy.gif')"
+            />
+          </div>
+          <div class="animal-logo">
+            <van-image
+              fit="fill"
+              :src="require('../../assets/yearGreeting/cardOne/animal.gif')"
+            />
+          </div>
+          <div class="introduce-word">新/春/大/拜/年/初/二/我/又/来</div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="box2">
+          <div class="bg-box">
+            <van-image
+              width="100vw"
+              height="100vh"
+              fit="fill"
+              :src="require('../../assets/yearGreeting/cardOne/BG.gif')"
+            />
+          </div>
+          <div class="content-box">
+            <div class="content-title-logo">
+              <van-image
+                fit="fill"
+                :src="require('../../assets/yearGreeting/cardOne/happy.gif')"
+              />
+            </div>
+            <div class="content-title">· 新 年 祝 福 ·</div>
+            <div class="content-title-second">
+              <van-image
+                fit="fill"
+                :src="require('../../assets/yearGreeting/cardOne/greeting.png')"
+              />
+            </div>
+            <div class="content-title-line">
+              <van-image
+                fit="fill"
+                :src="require('../../assets/yearGreeting/cardOne/line.png')"
+              />
+            </div>
+            <div class="content-word">
+              <van-field
+                v-model="contentWord"
+                :border="false"
+                center
+                input-align="center"
+              />
+            </div>
+            <div class="content-animal-logo">
+              <van-image
+                fit="fill"
+                :src="
+                  require('../../assets/yearGreeting/cardOne/animalLogo.png')
+                "
+              />
+            </div>
+            <div class="content-animal-word">
+              <van-image
+                fit="fill"
+                :src="
+                  require('../../assets/yearGreeting/cardOne/animalWord.png')
+                "
+              />
+            </div>
+            <div class="content-time">2021年2月11日</div>
+            <div class="content-button"></div>
+          </div>
+          <div class="middle-title-logo">
+            <van-image
+              fit="fill"
+              width="100%"
+              :src="require('../../assets/yearGreeting/cardOne/middleLogo.png')"
+            />
+          </div>
+        </div>
+      </swiper-slide>
+    </swiper>
   </div>
+
+  <!-- 这里开始是第二页 -->
 </template>
 
 <script>
 export default {
   data() {
     return {
+      swiperOption: {
+        direction: "vertical",
+      },
       contentWord: "你好好你好",
     };
   },
-  mounted(){
-     this.shareList()
-  }
+  mounted() {
+    this.shareList();
+  },
 };
 </script>
 
-<style scoped>
-.box {
+<style lang="scss" scoped>
+@import "../../style/common.scss";
+.container {
+  @include w-h-100;
+  .swiper {
+    @include w-h-100;
+    &__item {
+      @include w-h-100;
+    }
+  }
+}
+.box1,.box2 {
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -121,41 +151,41 @@ export default {
 }
 .bg-word {
   position: absolute;
-  left: 3.08rem;
-  top: 3.97rem;
-  width: 18.86rem;
-  height: 31.11rem;
+  left: 43px;
+  top: 56px;
+  width: 264px;
+  height: 435px;
 }
 .year-img {
   position: absolute;
-  left: 19.56rem;
-  top: 5.52rem;
-  width: 5.75rem;
-  height: 2.67rem;
+  left: 274px;
+  top: 77px;
+  width: 80px;
+  height: 37px;
 }
 .new-year-logo {
   position: absolute;
-  left: 19.56rem;
-  top: 8.44rem;
-  width: 5.24rem;
-  height: 3.27rem;
+  left: 277px;
+  top: 118px;
+  width: 73px;
+  height: 46px;
 }
 .animal-logo {
   position: absolute;
-  left: 8.51rem;
-  top: 32.25rem;
-  width: 10.1rem;
-  height: 8.13rem;
+  left: 119px;
+  top: 451px;
+  width: 141px;
+  height: 114px;
 }
 .introduce-word {
   position: absolute;
   left: 0;
-  top: 40.7rem;
+  top: 565px;
   width: 100%;
-  height: 2.51rem;
-  line-height: 2.51rem;
+  height: 26px;
+  line-height: 26px;
   background-image: url("../../assets/yearGreeting/cardOne/wordBg.png");
-  font-size: 1.27rem;
+  font-size: 18px; 
   font-family: Source Han Sans SC;
   font-weight: bold;
   /* line-height: 1.43rem; */
@@ -165,118 +195,116 @@ export default {
   text-align: center;
 }
 .content-box {
-  width: 20.32rem;
-  height: 37.05rem;
+  width: 284px;
+  height: 519px;
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 73px;
+  transform: translate(-50%);
   border: 1px solid #ead4b4;
   opacity: 1;
 }
 .content-title-logo {
   position: absolute;
-  top: 5px;
+  top: 4px;
   left: 50%;
   transform: translate(-50%);
-  width: 11.84rem;
-  height: 2.13rem;
+  width: 166px;
+  height: 30px;
 }
 .content-title {
-  width: 12.32rem;
-  height: 2.25rem;
+  width: 172px;
+  height: 32px;
   background-image: url("../../assets/yearGreeting/cardOne/contentTitle.gif");
-  line-height: 2.25rem;
+  line-height: 32px;
   position: absolute;
   left: 50%;
-  top: 3.1rem;
+  top: 38px;
   transform: translate(-50%);
-  font-size: 1.27rem;
+  font-size: 18px;
   font-family: Source Han Sans SC;
   font-weight: bold;
   color: #bd0f0d;
-  letter-spacing: 4px;
   text-align: center;
-  border-radius: 6rem;
+  border-radius: 15px;
 }
 .content-title-second {
   position: absolute;
   left: 50%;
-  top: 8.4rem;
+  top: 112px;
   transform: translate(-50%);
-  width: 14.25rem;
-  height: 1.87rem;
-  font-size: 1.78rem;
-  font-family: STXingkai;
-  font-weight: 400;
-  line-height: 1.87rem;
-  color: #ead4b4;
+  width: 200px;
+  height:26px;
+  // font-size: 1.78rem;
+  // font-family: STXingkai;
+  // font-weight: 400;
+  // line-height: 1.87rem;
+  // color: #ead4b4;
 }
 .middle-title-logo {
   width: 100%;
-  height: 1.27rem;
+  height: 18px;
   position: absolute;
   left: 0;
-  top: 12.51rem;
+  top: 147px;
 }
 .content-word {
   width: 100%;
   position: absolute;
   left: 0;
-  top: 12.06rem;
+  top: 169px;
 }
-.content-word /deep/ .van-cell {
+.content-word ::v-deep .van-cell {
   background-color: transparent;
   padding: 0;
 }
 .content-title-line {
-  width: 14.76rem;
-  height: 0.22rem;
+  width: 207px;
+  height: 3px;
   position: absolute;
   left: 50%;
-  top: 10.35rem;
+  top: 145px;
   transform: translate(-50%);
 }
-.content-word /deep/ .van-field__control {
-  font-size: 1.27rem;
+.content-word ::v-deep .van-field__control {
+  font-size: 18px;
   font-family: PingFang SC;
   font-weight: 400;
   color: #ead4b4;
 }
 .content-animal-logo {
-  width: 8.95rem;
-  height: 11.78rem;
+  width: 125px;
+  height: 165px;
   position: absolute;
-  left: 1.56rem;
-  top: 15.33rem;
+  left: 1.22px;
+  top: 215px;
 }
 .content-animal-word {
-  width: 5.08rem;
-  height: 1.78rem;
+  width: 71px;
+  height:25px ;
   position: absolute;
-  left: 11.78rem;
-  top: 20.32rem;
+  left: 165px;
+  top: 284px;
 }
-.content-time{
-  width:100%;
+.content-time {
+  width: 100%;
   position: absolute;
-  top:29.62rem;
-  height: 1.43rem;
-  line-height: 1.43rem;
+  top:415px;
+  height: 20px;
+  line-height: 20px;
   text-align: center;
-  font-size: 1.02rem;
-  color: #EAD4B4;
+  font-size: 14px;
+  color: #ead4b4;
 }
-.content-button{
+.content-button {
   position: absolute;
   left: 50%;
-  top:33.21rem;
+  top: 465px;
   transform: translate(-50%);
-  height: 2.86rem;
-  width: 10.98rem;
+  height: 40px;
+  width: 154px;
   background-image: url("../../assets/yearGreeting/cardOne/buttonImg.png");
   background-repeat: round;
-  line-height: 2.86rem;
-
+  line-height: 40px;
 }
 </style>
