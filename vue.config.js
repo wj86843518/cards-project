@@ -21,7 +21,8 @@ module.exports = {
 
         open: true,
 
-        host: '192.168.0.102',
+        // host: '192.168.0.102',
+        host: 'localhost',
 
         port: 8888,
 

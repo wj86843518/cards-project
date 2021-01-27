@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <swiper class="swiper" :options="swiperOption">
-      <!--   <swiper-slide class="swiper__item">
-      <div class="pic1-container">
+      <swiper-slide class="swiper__item">
+        <div class="pic1-container">
           <img class="bg2" src="./pics/pic1/bg2.png" />
           <img class="bg3" src="./pics/pic1/bg3.png" />
           <img class="bg4" src="./pics/pic1/bg4.png" />
@@ -35,8 +35,8 @@
             </div>
             <img class="content__bg8" src="./pics/pic1/bg8.png" />
           </div>
-        </div> 
-      </swiper-slide>-->
+        </div>
+      </swiper-slide>
       <swiper-slide class="swipe__item">
         <div class="pic2-container">
           <img class="bg2" src="./pics/pic1/bg2.png" />
