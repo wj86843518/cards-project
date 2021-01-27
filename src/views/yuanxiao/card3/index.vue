@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <swiper class="swiper" :options="swiperOption">
-      <swiper-slide class="swiper__item">
+      <!-- <swiper-slide class="swiper__item">
         <div class="pic1-container">
           <img class="bg2" src="./pics/pic1/bg2.png" />
           <img class="bg3" src="./pics/pic1/bg3.png" />
@@ -35,7 +35,7 @@
             />
           </div>
         </div>
-      </swiper-slide>
+      </swiper-slide> -->
       <swiper-slide class="swipe__item">
         <div class="pic2-container">
           <img class="bg2" src="./pics/pic1/bg2.png" />
@@ -111,133 +111,131 @@ export default {
       @include w-h-100;
     }
   }
+  .bg2 {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 149px;
+  }
+  .bg3 {
+    position: absolute;
+    right: 67px;
+    left: 67px;
+    top: 136px;
+    width: calc(100vw - 134px);
+  }
+  .bg4 {
+    position: absolute;
+    right: 0;
+    top: 332px;
+    width: 207px;
+  }
+  .bg5 {
+    position: absolute;
+    right: 68px;
+    top: 320px;
+    width: 147px;
+  }
   .pic1-container {
-    .bg2 {
+    height: 100vh;
+    width: 100vw;
+    // @include setBg("./pics/pic1/bg1.png");
+    .txt1 {
       position: absolute;
-      right: 0;
-      top: 40px;
-      width: 150px;
+      top: 91px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 139px;
+      &__item1 {
+        position: absolute;
+        width: 100%;
+      }
+      &__yuan {
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 21px;
+      }
+      &__xiao {
+        position: absolute;
+        top: 3px;
+        left: 40px;
+        width: 21px;
+      }
+      &__jia {
+        position: absolute;
+        top: 3px;
+        left: 78px;
+        width: 21px;
+      }
+      &__jie {
+        position: absolute;
+        top: 3px;
+        left: 116px;
+        width: 21px;
+      }
     }
-    .bg3 {
+    .txt2 {
       position: absolute;
-      right: 60px;
-      left: 60px;
-      top: 150px;
-      width: calc(100vw - 120px);
-    }
-    .bg4 {
-      position: absolute;
-      right: 0;
-      top: 370px;
-      width: 200px;
-    }
-    .bg5 {
-      position: absolute;
-      right: 50px;
-      top: 350px;
-      width: 150px;
-    }
-    .pic1-container {
-      height: 100vh;
+      top: 185px;
       width: 100vw;
-      // @include setBg("./pics/pic1/bg1.png");
-
-      .txt1 {
+      &__item1 {
         position: absolute;
-        top: 80px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 150px;
-        &__item1 {
-          position: absolute;
-          width: 100%;
+        top: 0;
+        left: 103px;
+        &__txt2 {
+          width: 40px;
         }
-        &__yuan {
+        &__zdjc {
           position: absolute;
-          top: 3px;
-          left: 2px;
-          width: 22px;
+          width: 21px;
+          height: 143px;
+          top: 5px;
+          left: 9px;
         }
-        &__xiao {
-          position: absolute;
-          top: 3px;
-          left: 43px;
-          width: 22px;
-        }
-        &__jia {
-          position: absolute;
-          top: 3px;
-          left: 83px;
-          width: 22px;
-        }
-        &__jie {
-          position: absolute;
-          top: 3px;
-          left: 125px;
-          width: 22px;
+        &__txt3 {
+          width: 32px;
+          position: relative;
+          top: 9px;
+          left: 4px;
         }
       }
-      .txt2 {
+      &__item2 {
         position: absolute;
-        top: 180px;
-        width: 100vw;
-        &__item1 {
-          position: absolute;
-          top: 0;
-          left: 90px;
-          &__txt2 {
-            width: 40px;
-          }
-          &__zdjc {
-            position: absolute;
-            width: 21px;
-            top: 6px;
-            left: 9px;
-          }
-          &__txt3 {
-            width: 30px;
-            position: relative;
-            top: 10px;
-            left: 6px;
-          }
-        }
-        &__item2 {
-          position: absolute;
-          left: 50%;
-          transform: translateX(-50%);
-          top: 0;
-          width: 50px;
-        }
-        &__item3 {
-          position: absolute;
-          top: 0;
-          right: 90px;
-          &__nnls {
-            width: 20px;
-          }
-          &__hdjc {
-            width: 20px;
-            margin-top: 20px;
-          }
-          &__ryys {
-            width: 20px;
-            margin-top: 20px;
-          }
-        }
-      }
-      .input {
-        position: absolute;
-        bottom: 100px;
         left: 50%;
         transform: translateX(-50%);
-        width: 200px;
-        &__item {
-          background-color: transparent;
-          font-size: 16px;
-          ::v-deep .van-field__control {
-            color: #7d4d2e;
-            text-align: center;
-          }
+        top: 0;
+        width: 49px;
+      }
+      &__item3 {
+        position: absolute;
+        top: 0;
+        right: 111px;
+        &__nnls {
+          width: 18px;
+        }
+        &__hdjc {
+          width: 18px;
+          margin-top: 22px;
+        }
+        &__ryys {
+          width: 18px;
+          margin-top: 22px;
+        }
+      }
+    }
+    .input {
+      position: absolute;
+      top: 554px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      &__item {
+        background-color: transparent;
+        font-size: 16px;
+        ::v-deep .van-field__control {
+          color: #7d4d2e;
+          text-align: center;
         }
       }
     }
@@ -249,23 +247,23 @@ export default {
     // @include setBg("./pics/pic2/bg1.png");
     .zf {
       position: absolute;
-      right: 100px;
-      left: 100px;
-      top: 80px;
-      width: calc(100vw - 200px);
+      right: 96px;
+      left: 96px;
+      top: 81px;
+      width: calc(100vw - 192px);
     }
     .content {
       position: absolute;
-      right: 45px;
-      left: 45px;
-      top: 140px;
-      width: calc(100vw - 90px);
+      right: 46px;
+      left: 46px;
+      top: 138px;
+      width: calc(100vw - 92px);
       &__jx1 {
         width: 100%;
       }
       &__jx2 {
         position: absolute;
-        width: 92%;
+        width: 94%;
         left: 50%;
         top: 50%;
         transform: translate3d(-50%, -50%, 0);
@@ -277,13 +275,20 @@ export default {
         left: 50%;
         transform: translateX(-50%);
         &__bg5 {
+          position: absolute;
+          top: 173px;
           width: 100%;
-          margin-top: 50px;
+          // margin-top: 50px;
         }
         &__btn {
-          width: 60%;
-          margin: auto;
-          margin-top: 50px;
+          position: absolute;
+          top: 347px;
+          // bottom: 20px;
+          width: 154px;
+          height: 40px;
+          @include center-x;
+          // margin: auto;
+          // margin-top: 50px;
           &__bg {
             width: 100%;
           }

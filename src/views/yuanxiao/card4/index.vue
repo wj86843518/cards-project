@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <swiper class="swiper" :options="swiperOption">
-      <swiper-slide class="swiper__item">
+      <!-- <swiper-slide class="swiper__item">
         <div class="pic1-container">
           <img class="bg2" src="./pics/pic1/bg2.png" />
           <div class="txt1">
@@ -31,7 +31,7 @@
           <img class="bg9" src="./pics/pic1/bg9.png" />
           <img class="bg8" src="./pics/pic1/bg8.png" />
         </div>
-      </swiper-slide>
+      </swiper-slide> -->
       <swiper-slide class="swipe__item">
         <div class="pic2-container">
           <img class="bg2" src="./pics/pic2/bg2.png" />
@@ -118,85 +118,86 @@ export default {
     .bg2 {
       position: absolute;
       left: 0;
-      top: 70px;
-      width: 100px;
+      top: 64px;
+      width: 132px;
     }
     .txt1 {
       position: absolute;
-      left: 30px;
-      top: 50px;
-      width: 110px;
+      left: 21px;
+      top: 32px;
+      width: 135px;
       &__bg {
         width: 100%;
       }
       &__txt {
         position: absolute;
-        width: 40px;
-        top: 115px;
-        left: 22px;
+        width: 53px;
+        top: 136px;
+        left: 24px;
       }
     }
     .txt2 {
       position: absolute;
-      top: 75px;
-      left: 80px;
-      width: 140px;
+      top: 45px;
+      left: 72px;
+      width: 171px;
       z-index: 20;
       &__bg {
         width: 100%;
       }
       &__txt {
         position: absolute;
-        top: 130px;
-        width: 40px;
-        left: 45px;
+        top: 172px;
+        width: 55px;
+        left: 61px;
       }
     }
     .txt3 {
       position: absolute;
-      left: 155px;
-      top: 40px;
-      width: 110px;
+      left: 163px;
+      top: 12px;
+      width: 140px;
       z-index: 10;
       &__bg {
         width: 100%;
       }
       &__txt {
         position: absolute;
-        top: 100px;
-        left: 25px;
-        width: 45px;
+        top: 126px;
+        left: 32px;
+        width: 60px;
       }
     }
     .txt4 {
       position: absolute;
-      left: 210px;
-      top: 80px;
-      width: 130px;
+      left: 230px;
+      top: 55px;
+      width: 145px;
       &__bg {
         width: 100%;
       }
       &__txt {
         position: absolute;
-        left: 52px;
-        top: 105px;
-        width: 35px;
+        left: 60px;
+        top: 132px;
+        width: 45px;
       }
     }
     .bg3 {
       position: absolute;
       right: 0;
-      top: 300px;
-      width: 100px;
+      top: 311px;
+      width: 111px;
     }
     .input {
       position: absolute;
-      top: 360px;
+      top: 403px;
       left: 40px;
       right: 40px;
       width: calc(100vw - 80px);
       &__item {
         background-color: transparent;
+        padding: 0;
         font-size: 16px;
         ::v-deep .van-field__control {
           color: #fddb8c;
@@ -206,16 +207,15 @@ export default {
     }
     .bg9 {
       position: absolute;
-      left: 20px;
-      top: 430px;
-      width: 80px;
+      left: 21px;
+      top: 443px;
+      width: 102px;
     }
     .bg8 {
       position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 450px;
-      width: 180px;
+      left: 105px;
+      top: 464px;
+      width: 204px;
     }
   }
   .pic2-container {
@@ -224,48 +224,48 @@ export default {
     @include setBg("./pics/pic1/bg1.png");
     .bg2 {
       position: absolute;
-      left: 30px;
-      right: 30px;
-      top: 70px;
-      bottom: 70px;
-      width: calc(100vw - 60px);
-      height: calc(100vh - 140px);
+      left: 26px;
+      right: 26px;
+      top: 72px;
+      bottom: 72px;
+      width: calc(100vw - 52px);
+      height: calc(100vh - 144px);
     }
     .bg3 {
       position: absolute;
       left: 0;
-      top: 70px;
-      width: 120px;
+      top: 64px;
+      width: 132px;
     }
     .bg4 {
       position: absolute;
       right: 0;
-      top: 40px;
-      width: 100px;
+      top: 32px;
+      width: 99px;
     }
     .txt1 {
       position: absolute;
-      left: 110px;
-      right: 110px;
-      top: 100px;
-      width: calc(100% - 220px);
+      left: 108px;
+      right: 108px;
+      top: 102px;
+      width: calc(100% - 216px);
       &__bg {
         width: 100%;
       }
       &__txt {
-        top: 7px;
+        top: 6px;
         position: absolute;
-        width: 90%;
+        width: 149px;
         left: 50%;
         transform: translateX(-50%);
       }
     }
     .content {
       position: absolute;
-      left: 60px;
-      right: 60px;
-      top: 170px;
-      width: calc(100% - 120px);
+      left: 62px;
+      right: 62px;
+      top: 168px;
+      width: calc(100% - 124px);
       &__bg6 {
         width: 100%;
       }
@@ -284,7 +284,7 @@ export default {
         position: relative;
         margin: auto;
         margin-top: 30px;
-        width: 100px;
+        width: 113px;
         &__bg {
           width: 100px;
         }
@@ -297,28 +297,27 @@ export default {
         }
         .w-70 {
           width: 70px;
+          margin-left: -5px;
         }
       }
     }
     .bg5 {
       position: absolute;
-      width: 100px;
-      left: -20px;
-      top: 550px;
+      width: 105px;
+      left: -25px;
+      top: 535px;
     }
     .bg6 {
       position: absolute;
-      width: 100px;
-      right: -40px;
+      width: 85px;
+      right: -30px;
       top: 550px;
     }
     .bg7 {
       position: absolute;
-      width: 130px;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 550px;
-      margin-left: 10px;
+      width: 140px;
+      left: 132px;
+      top: 546px;
     }
   }
 }

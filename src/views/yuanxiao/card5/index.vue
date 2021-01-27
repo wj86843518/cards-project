@@ -18,9 +18,9 @@
               <img class="content__txt1__jia" src="./pics/pic1/jia.png" />
             </div>
             <div class="content__txt2">
-              <img class="content__txt2__txt" src="./pics/pic1/guo.png" />
-              <img class="content__txt2__txt" src="./pics/pic1/yuan.png" />
-              <img class="content__txt2__txt" src="./pics/pic1/xiao.png" />
+              <img class="content__txt2__guo" src="./pics/pic1/guo.png" />
+              <img class="content__txt2__yuan" src="./pics/pic1/yuan.png" />
+              <img class="content__txt2__xiao" src="./pics/pic1/xiao.png" />
             </div>
             <div class="content__txt3">
               <img src="./pics/pic1/txt1.png" />
@@ -139,16 +139,16 @@ export default {
   }
   .bg3 {
     position: absolute;
-    left: 5px;
-    right: 5px;
-    width: calc(100vw - 10px);
-    top: -30px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    top: -20px;
     z-index: 2;
   }
   .bg4 {
     position: absolute;
     top: 30px;
-    width: 70px;
+    width: 68px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
@@ -174,15 +174,15 @@ export default {
   }
   .yun1 {
     position: absolute;
-    bottom: 70px;
+    bottom: 65px;
     left: 0;
-    width: 100px;
+    width: 96px;
   }
   .yun2 {
     position: absolute;
-    bottom: 70px;
+    bottom: 65px;
     right: 0;
-    width: 100px;
+    width: 96px;
     z-index: 5;
   }
   .pic1-container {
@@ -191,40 +191,46 @@ export default {
     @include setBg("./pics/pic1/bg1.png");
     .content {
       position: absolute;
-      top: 140px;
+      top: 164px;
       width: 100%;
       &__txt1 {
-        padding: 0 70px;
+        padding: 0 57px 0 79px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         &__dai {
-          width: 65px;
+          width: 67px;
         }
         &__zai {
-          width: 50px;
+          width: 56px;
         }
         &__jia {
-          width: 65px;
+          width: 80px;
         }
       }
       &__txt2 {
-        padding: 0 70px;
+        padding: 0 57px 0 79px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin-top: 20px;
-        &__txt {
-          width: 65px;
+        margin-top: 11px;
+        &__guo {
+          width: 76px;
+        }
+        &__yuan {
+          width: 69px;
+        }
+        &__xiao {
+          width: 60px;
         }
       }
       &__txt3 {
         position: relative;
-        margin-top: 20px;
-        padding: 0 40px;
-        width: calc(100vw - 80px);
+        margin-top: 19px;
+        padding: 0 43px;
+        width: calc(100vw - 86px);
         img {
           width: 100%;
         }
@@ -238,7 +244,7 @@ export default {
         }
       }
       .input {
-        margin-top: 10px;
+        margin-top: 11px;
         width: calc(100vw - 80px);
         margin: auto;
         &__item {
@@ -263,10 +269,10 @@ export default {
     @include setBg("./pics/pic1/bg1.png");
     .content {
       position: absolute;
-      top: 90px;
+      top: 109px;
       z-index: 5;
       &__txt1 {
-        padding: 0 40px;
+        padding: 0 43px;
         img {
           width: 100%;
         }
@@ -277,10 +283,11 @@ export default {
           transform: translateX(-50%);
           color: #f50000;
           font-size: 14px;
+          font-weight: bold;
         }
       }
       .input {
-        margin-top: 10px;
+        margin-top: 11px;
         width: calc(100vw - 80px);
         margin: auto;
         &__item {

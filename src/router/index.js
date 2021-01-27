@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import YearGreeting from '../views/yearGreeting/YearGreeting.vue'
+import HuanHua from '../views/huanhua/huanhua.vue'
 import Login from '../views/Login.vue'
 Vue.use(VueRouter)
 
@@ -9,7 +10,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import(/* webpackChunkName: "about" */ '../views/yuanxiao/card6/index.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/yuanxiao/card5/index.vue')
   },
   {
     path: '/about',
@@ -23,6 +24,11 @@ const routes = [
     path: '/yearGreeting/:id',
     name: 'yearGreeting',
     component: YearGreeting
+  },
+  {
+    path: '/huanhua/:id',
+    name: 'huanhua',
+    component: HuanHua
   },
   {
     path: '/login',

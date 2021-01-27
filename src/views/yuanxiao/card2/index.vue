@@ -97,50 +97,50 @@ export default {
       position: absolute;
       right: 0;
       top: 0;
-      width: 130px;
+      width: 133px;
     }
     .txt {
       position: absolute;
-      top: 90px;
+      top: 96px;
       left: 50%;
       transform: translateX(-50%);
-      width: 100px;
+      width: 98px;
       &__item1 {
         width: 100px;
       }
       &__item2 {
         position: absolute;
         bottom: 30px;
-        left: 10px;
-        width: 20px;
+        left: 6px;
+        width: 19px;
       }
     }
     .txt3 {
       position: absolute;
-      top: 275px;
+      top: 278px;
       left: 50%;
       transform: translateX(-50%);
-      width: 30px;
+      width: 27px;
     }
     .bg5 {
       position: absolute;
-      top: 400px;
+      top: 394px;
       left: 50%;
       transform: translateX(-50%);
-      width: 30px;
+      width: 37px;
     }
     .bg4 {
       position: absolute;
-      top: 440px;
+      top: 429px;
       left: 50%;
       transform: translateX(-50%);
-      width: 150px;
+      width: 148px;
     }
     .txt4 {
       position: absolute;
-      top: 480px;
-      right: 40px;
-      width: 30px;
+      top: 477px;
+      right: 38px;
+      width: 37px;
     }
   }
   .pic2-container {
@@ -157,21 +157,21 @@ export default {
       position: absolute;
       right: 0;
       top: 0;
-      width: 130px;
+      width: 133px;
     }
     .zf {
       position: absolute;
-      top: 80px;
+      top: 90px;
       left: 50%;
       transform: translateX(-50%);
-      width: 150px;
+      width: 144px;
     }
     .bg5 {
       position: absolute;
-      top: 90px;
-      left: 30px;
-      right: 30px;
-      width: calc(100vw - 60px);
+      top: 97px;
+      left: 31px;
+      right: 31px;
+      width: calc(100vw - 62px);
     }
     .content {
       position: absolute;
@@ -190,10 +190,10 @@ export default {
     }
     .good {
       position: absolute;
-      top: 370px;
-      left: 80px;
+      top: 368px;
+      left: 94px;
       .niu {
-        width: 100px;
+        width: 97px;
       }
       .goods-counts-txt {
         position: absolute;
@@ -207,16 +207,16 @@ export default {
     }
     .btn {
       position: absolute;
-      top: 530px;
-      left: 110px;
-      right: 110px;
-      width: calc(100vw - 220px);
+      top: 538px;
+      left: 111px;
+      right: 111px;
+      width: calc(100vw - 222px);
       &__bg {
         width: 100%;
       }
       &__txt {
         position: absolute;
-        width: 40px;
+        width: 43px;
         top: 50%;
         left: 50%;
         transform: translate3d(-50%, -50%, 0);
