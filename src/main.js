@@ -15,6 +15,8 @@ import 'lib-flexible/flexible.js'
 
 import './style/reset.scss';
 
+// import './style/font.scss';
+
 Vue.use(Vant);
 
 Vue.use(VueAwesomeSwiper);

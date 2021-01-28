@@ -1,11 +1,13 @@
 <template>
   <div class="container">
     <swiper class="swiper" :options="swiperOption">
-      <swiper-slide class="swiper__item">
+      <!-- <swiper-slide class="swiper__item">
         <div class="pic1-container">
           <img class="bg2" src="./pics/pic1/bg2.png" />
           <img class="bg3" src="./pics/pic1/bg3.png" />
           <img class="bg4" src="./pics/pic1/bg4.png" />
+          <img class="dl-l" src="./pics/pic1/dl-l.png" />
+          <img class="dl-r" src="./pics/pic1/dl-r.png" />
           <img class="txt1" src="./pics/pic1/txt1.png" />
           <img class="txt2" src="./pics/pic1/txt2.png" />
           <img class="txt3" src="./pics/pic1/txt3.png" />
@@ -17,7 +19,7 @@
             />
           </div>
         </div>
-      </swiper-slide>
+      </swiper-slide> -->
       <swiper-slide class="swipe__item">
         <div class="pic2-container">
           <img class="bg2" src="./pics/pic2/bg2.png" />
@@ -89,49 +91,60 @@ export default {
     @include setBg("./pics/pic1/bg1.png");
     .bg2 {
       position: absolute;
-      top: 108px;
-      left: 15px;
-      right: 15px;
-      width: calc(100vw - 30px);
+      left: 23px;
+      right: 23px;
+      top: 119px;
+      width: calc(100vw - 46px);
     }
     .bg3 {
       position: absolute;
-      top: 110px;
+      top: 125px;
       left: 0;
       width: 100vw;
     }
     .bg4 {
       position: absolute;
-      top: 220px;
-      left: 15px;
-      right: 15px;
-      width: calc(100vw - 30px);
+      top: 228px;
+      left: 24px;
+      right: 24px;
+      width: calc(100vw - 48px);
+    }
+    .dl-l {
+      position: absolute;
+      top: 148px;
+      left: 56px;
+      width: 64px;
+    }
+    .dl-r {
+      position: absolute;
+      top: 148px;
+      right: 56px;
+      width: 64px;
     }
     .txt1 {
       position: absolute;
-      top: 440px;
-      left: 70px;
-      right: 70px;
-      width: calc(100vw - 140px);
+      top: 437px;
+      left: 69px;
+      right: 69px;
+      width: calc(100vw - 138px);
     }
     .txt2 {
       position: absolute;
-      top: 500px;
-      left: 130px;
-      right: 130px;
-      width: 115px;
-      width: calc(100vw - 260px);
+      top: 512px;
+      left: 135px;
+      right: 135px;
+      width: calc(100vw - 270px);
     }
     .txt3 {
       position: absolute;
-      top: 535px;
-      left: 130px;
-      right: 130px;
-      width: calc(100vw - 260px);
+      top: 543px;
+      left: 138px;
+      right: 138px;
+      width: calc(100vw - 276px);
     }
     .input {
       position: absolute;
-      top: 560px;
+      top: 561px;
       left: 40px;
       right: 40px;
       width: calc(100vw - 80px);
@@ -151,8 +164,8 @@ export default {
     .bg2 {
       position: absolute;
       top: 0;
-      left: 40px;
-      width: calc(100vw - 40px);
+      left: 67px;
+      width: calc(100vw - 67px);
     }
     .bg3 {
       position: absolute;
@@ -162,29 +175,29 @@ export default {
     }
     .dl-l {
       position: absolute;
-      left: 20px;
-      top: 60px;
-      width: 60px;
+      left: 21px;
+      top: 54px;
+      width: 65px;
     }
     .dl-r {
       position: absolute;
-      right: 20px;
-      top: 60px;
-      width: 56px;
+      right: 21px;
+      top: 54px;
+      width: 65px;
     }
     .bg4 {
       position: absolute;
-      top: 90px;
-      left: 70px;
-      right: 70px;
-      width: calc(100vw - 140px);
+      top: 81px;
+      left: 75px;
+      right: 75px;
+      width: calc(100vw - 150px);
     }
     .zf {
       position: absolute;
-      top: 110px;
-      left: 140px;
-      right: 140px;
-      width: calc(100vw - 280px);
+      top: 101px;
+      left: 144px;
+      right: 144px;
+      width: calc(100vw - 288px);
     }
     .content {
       position: absolute;
@@ -198,14 +211,14 @@ export default {
     }
     .good {
       position: absolute;
-      top: 300px;
-      left: 80px;
+      top: 306px;
+      left: 94px;
       .niu {
-        width: 100px;
+        width: 97px;
       }
       .goods-counts-txt {
         position: absolute;
-        left: 120px;
+        left: 117px;
         width: 100px;
         top: 50%;
         transform: translateY(-50%);
@@ -215,16 +228,16 @@ export default {
     }
     .btn {
       position: absolute;
-      top: 510px;
-      left: 120px;
-      right: 120px;
-      width: calc(100vw - 240px);
+      top: 538px;
+      left: 111px;
+      right: 111px;
+      width: calc(100vw - 222px);
       &__bg {
         width: 100%;
       }
       &__txt {
         position: absolute;
-        width: 80px;
+        width: 43px;
         top: 50%;
         left: 50%;
         transform: translate3d(-50%, -50%, 0);
@@ -232,10 +245,10 @@ export default {
     }
     .bg5 {
       position: absolute;
-      top: 570px;
-      left: 60px;
-      right: 60px;
-      width: calc(100vw - 120px);
+      top: 593px;
+      left: 52px;
+      right: 52px;
+      width: calc(100vw - 104px);
     }
   }
 }

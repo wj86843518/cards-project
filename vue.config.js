@@ -7,7 +7,7 @@ const resolve = (dir) => path.join(__dirname, dir);
 
 
 module.exports = {
-    publicPath: process.env.NODE_ENV === 'production' ? '/public/' : './',
+    publicPath: process.env.NODE_ENV === 'production' ? './' : './',
     indexPath: 'index.html', // 相对于打包路径index.html的路径
     outputDir: 'dist',
     assetsDir: 'static', // 相对于outputDir的静态资源(js、css、img、fonts)目录
@@ -22,6 +22,7 @@ module.exports = {
         open: true,
 
         host: '192.168.0.102',
+        // host: 'localhost',
 
         port: 8888,
 
