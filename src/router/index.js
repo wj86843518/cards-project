@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import YearGreeting from '../views/yearGreeting/YearGreeting.vue'
+import ChuWu from '../views/chuwu/chuwu.vue'
 import HuanHua from '../views/huanhua/huanhua.vue'
 import Login from '../views/Login.vue'
 Vue.use(VueRouter)
@@ -29,6 +30,11 @@ const routes = [
     path: '/huanhua/:id',
     name: 'huanhua',
     component: HuanHua
+  },
+  {
+    path: '/chuwu/:id',
+    name: 'chuwu',
+    component: ChuWu
   },
   {
     path: '/login',
