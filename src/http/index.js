@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-let baseURL = '/api' || process.env.VUE_APP_BASEURL;
+let baseURL = 'https://yan-test.szbellmen.cn/' || process.env.VUE_APP_BASEURL;
 
 export const service = axios.create({
     timeout: 30000, // 请求超时时间
